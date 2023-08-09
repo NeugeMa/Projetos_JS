@@ -19,6 +19,26 @@ formulário(esta lista deve ser preenchida dinamicamente por um loop for).
 incluir novas tarefas e excluir as tarefas desejadas. Ex: PUSH, POP, SHIFT, UNSHIFT e
 SPLICE. -->
 
+<div>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Adicione a nova Tarefa</legend>
+            <div>
+                <label for="idTarefa">Nova Tarefa</label>
+                <input type="text" name="tarefa" id="idTarefa" placeholder="Digite o nome da tarefa." required>
+            </div>
+            <div>
+                <button type="submit" id="btnAddTarefa">Adicionar</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<div>
+    <ul id="lista-tarefa">
+
+    </ul>
+</div>
 
 
 </body>
