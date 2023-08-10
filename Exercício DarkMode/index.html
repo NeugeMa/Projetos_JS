@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ✨ Checkpoint 03 ✨ </title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="./cp3.js" defer></script>
+</head>
+<body>
+    <div class="conteudo">
+        <form action="" method="get" onsubmit="return false">
+            <fieldset class="form-holder">
+                <h3>Formulário para Validação</h3>
+                <div class="form nome-form">
+                    <label id="lblNome" for="idNome">Primeiro nome: </label>
+                    <input class="input" type="text" name="txtNome" id="idNome" placeholder="ex: Ana (mínimo de 5 caractéres)">
+                </div>
+
+                <div class="form sobrenome-form">
+                    <label id="lblSobrenome" for="idSobrenome">Segundo nome: </label>
+                    <input class="input" type="text" name="txtSobrenome" id="idSobrenome" placeholder="ex: Silva (mínimo de 5 caractéres)">
+                </div>
+
+                <div class="form email-form">
+                    <label id="lblEmail" for="idEmail">E-mail: </label>
+                    <input class="input" type="email" name="txtEmail" id="idEmail" placeholder="ex: example@email.com">
+                </div>
+
+                <div class="form senha-form">
+                    <label id="lblSenha" for="idSenha">Senha: </label>
+                    <input class="input" type="password" name="txtSenha" id="idSenha" placeholder="Min. 6 caractéres, Max. 8">
+                </div>
+
+                <div class="form confirmasenha-form">
+                    <label id="lblConfirmaSenha" for="idConfirmaSenha">Confirme a senha: </label>
+                    <input class="input" type="password" name="txtConfirmaSenha" id="idConfirmaSenha">
+                </div>
+
+                <div class="form btn-form">
+                    
+                    <button id="darkmodeBtn" onclick="toggleDarkMode()">
+                        <i class="fa fa-moon-o" aria-hidden="true"></i>
+                    </button>
+                    <input id="submitBtn" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+</body>
+</html>

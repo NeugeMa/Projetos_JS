@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}   
+
+body {
+    background-color: #f7f7f7; /* cor de fundo padrão */
+    color: #000000;
+}
+
+h3{
+    text-align: center;
+    padding: 2% 0;
+}
+
+.conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 15% auto;
+}
+
+.form-holder{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    border-style: solid black 10px;
+    border-radius: 10px;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 1%;
+}
+
+.input{
+    width: 15vw;
+    border-style: solid 2px black;
+    border-radius: 10px;
+}
+
+#submitBtn{
+    width: 15vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* Anotações código sobre o Dark Mode */ 
+ 
+.dark-mode {
+    background-color: #353535; /* cor de fundo no modo escuro */
+    color: #ffffff; /* cor do texto no modo escuro */
+}
+
+/* Dark Mode adicional no itens do formulário 
+Resolvi fazer em cada aba, e que me ajudou a estudar mais */ 
+.dark-mode body {
+    background-color: #494747; 
+    color: #ffffff; 
+}
+
+.dark-mode h3 {
+    color: #ffffff; 
+}
+
+.dark-mode .form-holder {
+    border-color: #ffffff
+}
+
+.dark-mode .form {
+    color: #ffffff
+}
+.dark-mode .input {
+    background-color: #ffffff
+}
+
+#darkmodeBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 15px;
+    color:#ffffff;
+    background-color:#616060;
+    border-color: #353535;
+}
