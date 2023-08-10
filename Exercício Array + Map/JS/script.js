@@ -10,10 +10,10 @@ const salariosComAumento = salarios.map(salario => {
   }
 });
 
-// Utilizando o método filter() para obter salários acima de 2500
+// Método filter() para obter salários acima de 2500
 const salariosAcima2500 = salariosComAumento.filter(salario => salario > 2500);
 
-// Utilizando o método reduce() para somar os salários acima de 2500
+// Método reduce() para somar os salários acima de 2500
 const totalSalariosAcima2500 = salariosAcima2500.reduce((total, salario) => total + salario, 0);
 
 // Exibir resultados no console
