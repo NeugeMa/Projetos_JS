@@ -21,5 +21,13 @@ console.log("Salários com aumento:", salariosComAumento);
 console.log("Salários acima de 2500:", salariosAcima2500);
 console.log("Total dos salários acima de 2500:", totalSalariosAcima2500);
 
+// Explicanção código 
+// No meu arquivo em JS (script.js), foi criado um array salarios contendo os valores de salário iniciais.
 
+// E usando o método map() para percorrer o array salarios e aplicar os aumentos de salário 
+
+// Método filter() para criar um novo array salarios que deve ser Acima2500 que contém apenas os 
+// salários acima de 2500.
+
+// E por fim usei o método reduce() para somar os valores do array salariosAcima2500.
 
