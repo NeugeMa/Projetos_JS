@@ -109,50 +109,50 @@
 
 // console.log("\n");
 
-// //Imprimindo o nome, idade e peso de todos os objetos do array usando loop forEach
-// alunos.forEach(function (aluno) {
-//     console.log(aluno.nome, aluno.idade, aluno.peso);
-// });//Função anônima
+// // //Imprimindo o nome, idade e peso de todos os objetos do array usando loop forEach
+// // alunos.forEach(function (aluno) {
+// //     console.log(aluno.nome, aluno.idade, aluno.peso);
+// // });//Função anônima
 
+// // console.log("\n");
+
+// // //Imprimindo o nome, idade e peso de todos os objetos do array usando loop forEach
+// // alunos.forEach(aluno => {
+// //     console.log(aluno.nome, aluno.idade, aluno.peso);
+// // } );//Arrow function
+
+// // console.log("\n");
+
+// // //Imprimindo o nome, idade e peso de todos os objetos do array usando loop for of
+// // for (let aluno of alunos) {
+// //     console.log(aluno.nome, aluno.idade, aluno.peso);
+// // }//For of
+
+// // console.log("\n");
+
+// // //Imprimindo o nome, idade e peso de todos os objetos do array usando loop for in
+// // for (let i in alunos) {
+// //     console.log(alunos[i].nome, alunos[i].idade, alunos[i].peso);
+// // } //For in
+
+// //Declando um array de nomes de pessoas
+// // let nomes = ["Diego", "Gabriel", "Lucas"];
+// //Imprimindo o array
+// console.log(nomes);
 // console.log("\n");
 
-// //Imprimindo o nome, idade e peso de todos os objetos do array usando loop forEach
-// alunos.forEach(aluno => {
-//     console.log(aluno.nome, aluno.idade, aluno.peso);
-// } );//Arrow function
-
+// //Inserindo um novo nome no final do array utilizando o método push
+// nomes.push("João");
+// //Imprimindo o array
+// console.log(nomes);
 // console.log("\n");
 
-// //Imprimindo o nome, idade e peso de todos os objetos do array usando loop for of
-// for (let aluno of alunos) {
-//     console.log(aluno.nome, aluno.idade, aluno.peso);
-// }//For of
-
+// //Inserindo um novo nome no final do array utilizando o método push e passando com variável
+// let nome = "Maria";
+// nomes.push(nome);
+// //Imprimindo o array
+// console.log(nomes);
 // console.log("\n");
-
-// //Imprimindo o nome, idade e peso de todos os objetos do array usando loop for in
-// for (let i in alunos) {
-//     console.log(alunos[i].nome, alunos[i].idade, alunos[i].peso);
-// } //For in
-
-//Declando um array de nomes de pessoas
-let nomes = ["Diego", "Gabriel", "Lucas"];
-//Imprimindo o array
-console.log(nomes);
-console.log("\n");
-
-//Inserindo um novo nome no final do array utilizando o método push
-nomes.push("João");
-//Imprimindo o array
-console.log(nomes);
-console.log("\n");
-
-//Inserindo um novo nome no final do array utilizando o método push e passando com variável
-let nome = "Maria";
-nomes.push(nome);
-//Imprimindo o array
-console.log(nomes);
-console.log("\n");
 
 // console.log("\nImprimindo o nome, idade e peso de todos os objetos do array usando o valor da propriedade como String")
 // let propriedade = "nome";
@@ -189,143 +189,255 @@ console.log("\n");
 //     console.log(alunos[i].nome, alunos[i].idade, alunos[i].peso);
 // }
 
-let = ["Diego", "Gabriel", "Lucas"];
-console.log(nomes);
+// let nomes = ["Diego", "Gabriel", "Lucas"];
+// console.log(nomes);
 
-console.log("\nInserindo um novo nome no final do array utilizando array")
-nomes.push("João");
-console.log(nomes);
-
-
-//Inserindo um novo nome no início do array utilizando o método unshift, pegando o valor da variável nome que recebeu o valor do input.
-
-//Recuperando o botão submit do form
-let botao = document.querySelector("#btnSubmit");
-
-//Adicionando um evento de click ao botão de submit, utilizando uma arrow function
-botao.addEventListener("click", () => {
-
-    //Recuperando o valor do input de email e armazenando na variável email
-    let email = document.querySelector("#idEmail").value;
-    //Recuperando o valor do input de txtTel e armazenando na variável telefone
-    let telefone = document.querySelector("#idTel").value;
-
-    //Adicionando a variável email no inicio do array nomes.
-    nomes.unshift(email);
-
-    //Limpar o input de email.
-    document.querySelector("#idEmail").value = "";
-    //Limpar o input de telefone.
-    document.querySelector("#idTel").value = "";
-
-    //Imprimindo o array
-    console.log(nomes);
-    console.log("\n");
-
-    //Imprimindo o array na div com id="lista" um embaixo do outro
-    document.querySelector("#lista").innerHTML = nomes.join("<br>");
-});
+// console.log("\nInserindo um novo nome no final do array utilizando array")
+// nomes.push("João");
+// console.log(nomes);
 
 
-//Removendo o último elemento do array utilizando o método pop
-nomes.pop();
-//Imprimindo o array
-console.log(nomes);
-console.log("\n");
+// //Inserindo um novo nome no início do array utilizando o método unshift, pegando o valor da variável nome que recebeu o valor do input.
 
-//Removendo o primeiro elemento do array utilizando o método shift
-nomes.shift();
-//Imprimindo o array
-console.log(nomes);
-console.log("\n");
+// //Recuperando o botão submit do form
+// let botao = document.querySelector("#btnSubmit");
 
-//Colocando em ordem alfabética o array utilizando o método sort
-nomes.sort();
-//Imprimindo o array
-console.log(nomes);
-console.log("\n");
+// //Adicionando um evento de click ao botão de submit, utilizando uma arrow function
+// botao.addEventListener("click", () => {
 
-//Revertendo a ordem do array utilizando o método reverse
-nomes.reverse();
-//Imprimindo o array
-console.log(nomes);
-console.log("\n");
+//     //Recuperando o valor do input de email e armazenando na variável email
+//     let email = document.querySelector("#idEmail").value;
+//     //Recuperando o valor do input de txtTel e armazenando na variável telefone
+//     let telefone = document.querySelector("#idTel").value;
 
-//Recuperando o botão ordenar do form
+//     //Adicionando a variável email no inicio do array nomes.
+//     nomes.unshift(email);
 
-    let email = document.querySelector("#idEmail").value;
-    let telefone = document.querySelector("#idTel").value;
+//     //Limpar o input de email.
+//     document.querySelector("#idEmail").value = "";
+//     //Limpar o input de telefone.
+//     document.querySelector("#idTel").value = "";
 
-    //Adicionando a variável email no início do array nomes
-    nomes.unshift(email);
+//     //Imprimindo o array
+//     console.log(nomes);
+//     console.log("\n");
 
-    //Limpar o input de email
-    document.querySelector("#idEmail").value = "";
+//     //Imprimindo o array na div com id="lista" um embaixo do outro
+//     document.querySelector("#lista").innerHTML = nomes.join("<br>");
+// });
 
-    //Limpar o input de telefone
-    document.querySelector("#idTel").value = "";
 
-     //Imprimindo o array
-     console.log(nomes);
-     console.log("\n");
-;
-
-// //Removendo o último elemento do array com pop
-// console.log("\nRemovendo o último elemento do array com pop")
+// //Removendo o último elemento do array utilizando o método pop
 // nomes.pop();
+// //Imprimindo o array
 // console.log(nomes);
+// console.log("\n");
 
-// //Removendo o primeiro elemento do array com shift
-// console.log("\nRemovendo o primeiro elemento do array com shift")
+// //Removendo o primeiro elemento do array utilizando o método shift
 // nomes.shift();
+// //Imprimindo o array
+// console.log(nomes);
+// console.log("\n");
+
+// //Colocando em ordem alfabética o array utilizando o método sort
+// nomes.sort();
+// //Imprimindo o array
+// console.log(nomes);
+// console.log("\n");
+
+// //Revertendo a ordem do array utilizando o método reverse
+// nomes.reverse();
+// //Imprimindo o array
+// console.log(nomes);
+// console.log("\n");
+
+// //Recuperando o botão ordenar do form
+
+//     let email = document.querySelector("#idEmail").value;
+//     let telefone = document.querySelector("#idTel").value;
+
+//     //Adicionando a variável email no início do array nomes
+//     nomes.unshift(email);
+
+//     //Limpar o input de email
+//     document.querySelector("#idEmail").value = "";
+
+//     //Limpar o input de telefone
+//     document.querySelector("#idTel").value = "";
+
+//      //Imprimindo o array
+//      console.log(nomes);
+//      console.log("\n");
+
+
+// // //Removendo o último elemento do array com pop
+// // console.log("\nRemovendo o último elemento do array com pop")
+// // nomes.pop();
+// // console.log(nomes);
+
+// // //Removendo o primeiro elemento do array com shift
+// // console.log("\nRemovendo o primeiro elemento do array com shift")
+// // nomes.shift();
+// // console.log(nomes);
+
+// //Colocando em ordem alfabética o array com sort
+// console.log("\nColocando em ordem alfabética o array com sort");
+// nomes.sort();
 // console.log(nomes);
 
-//Colocando em ordem alfabética o array com sort
-console.log("\nColocando em ordem alfabética o array com sort");
-nomes.sort();
-console.log(nomes);
+// //Recuperando o botão ordenar do form
+// console.log("\nRecuperando o botão ordenar do form")
 
-//Recuperando o botão ordenar do form
-console.log("\nRecuperando o botão ordenar do form")
+// let botaoOrdenar = document.querySelector("#btnOrdenar");
 
-let botaoOrdenar = document.querySelector("#btnOrdenar");
-
-//Adicionando um evento de click ao botão de ordenar, utilizando uma arrow function
-botaoOrdenar.addEventListener("click", () => {
-    //Ordenando o array em ordem alfabética
-    nomes.sort();
-    //Imprimindo o array
-    console.log(nomes);
-    console.log("\n");
+// //Adicionando um evento de click ao botão de ordenar, utilizando uma arrow function
+// botaoOrdenar.addEventListener("click", () => {
+//     //Ordenando o array em ordem alfabética
+//     nomes.sort();
+//     //Imprimindo o array
+//     console.log(nomes);
+//     console.log("\n");
 
 
-    //Imprimindo o array na div com id="lista" um embaixo do outro
+//     //Imprimindo o array na div com id="lista" um embaixo do outro
 
-    //Imprimindo o array na div com id="lista"
+//     //Imprimindo o array na div com id="lista"
 
-    document.querySelector("#lista").innerHTML = nomes.join("<br>");
+//     document.querySelector("#lista").innerHTML = nomes.join("<br>");
+// });
+
+
+// //Alterando o valor de um elemento do array utilizando o método splice
+
+// nomes.splice(1, 1, "Maria");
+// //Imprimindo o array
+// console.log(nomes);
+// console.log("\n");
+
+// //Alterando o valor de dois elementos do array utilizando o método splice
+// nomes.splice(1, 2, "Tuca", "Jorge");
+// //Imprimindo o array
+// console.log(nomes);
+// console.log("\n");
+
+// //Alterando o valor de um elemento do array utilizando o método splice
+// nomes.splice(1, 1);
+// //Imprimindo o array
+// console.log(nomes);
+// console.log("\n");
+
+// console.log("\nAlterando o valor de um elemento do array utilizando o método splice");
+// nomes.splice(1, 1, "Maria");
+// console.log(nomes);
+
+// const cursos = [
+//     { nome: "HTML5", duracao: "3 meses"},
+//     { nome: "CSS3", duracao: "4 meses"},
+//     { nome: "JavaScript", duracao: "6 meses"}
+// ];
+
+// //Declarar um objeto
+// const curso = {
+//     nome: "PYTHON",
+//     duracao: "7 meses"
+// };
+
+// //Inserindo o objeto no array com push
+// cursos.push(curso);
+// //Imprimindo o array
+// console.log(cursos);
+// //Quebrando a linha
+// console.log("\n");
+
+// //Iterando o array com map
+// console.log("\nIterando o array com map");
+// cursos.map((curso) => {
+//     console.log(curso.nome);
+// });
+
+// let nomesCursos = cursos.map((curso) => curso.nome);
+// console.log(nomesCursos);
+
+// //Iterando o array com forEach
+// console.log("\nIterando o array com forEach");
+// let nomesCursos2 = cursos.forEach((curso) =>{ return curso.nome});
+// console.log(nomesCursos2);
+
+// //Declarar um array de categorias de tarefas.
+// const categorias = ["Trabalho", "Estudos", "Casa", "Lazer", "Esportes"];
+
+// //Recuperar o select de categorias
+// const selectCategoria = document.querySelector("#idCategoria");
+
+
+
+// categorias.forEach((categoria,index)=>{
+//     let optionCategoria = document.createElement("option");
+//     optionCategoria.textContent = categoria;
+//     optionCategoria.value = (index+1);
+//     selectCategoria.appendChild(optionCategoria);
+// });
+
+// let categoriasPares = categorias.filter((categoria,index) =>{
+//     return index % 2 == 0;
+// });
+// console.log(categoriasPares);
+
+// //Declarar um array de objetos com nome de usuário e senha
+// const usuarios = [
+//     {nome: "Maria", senha: "123456"},
+//     {nome: "João", senha: "123456"},
+//     {nome: "José", senha: "123456"}
+// ];
+
+// let usuarioLogado;
+
+// function validarUsuario(nmUser, senhaUser){
+// //Declarar uma variável para armazenar o objeto do usuário logado e validar com filter:
+// usuarioLogado = usuarios.filter((usuario) => {
+// return usuario.nome == nmUser && usuario.senha == senhaUser;
+// });
+// }
+
+// addEventListener("click", () => {
+//     console.log(usuarioLogado);
+// });
+
+
+const cursos = [
+    { nome: "HTML5", duracao: "3 meses"},
+    { nome: "CSS3", duracao: "4 meses"},
+    { nome: "JavaScript", duracao: "6 meses"}
+];
+
+//Exemplo de SPREAD
+// const curso = cursos[0];
+// const curso2 = {...curso, descricao: "Curso de HTML5"};
+// console.log(curso2);
+
+
+let cursos2 = cursos.map((curso) =>{ 
+    return {...curso, descricao: "Curso de " + curso.nome};
 });
 
+console.log(cursos2);
 
-//Alterando o valor de um elemento do array utilizando o método splice
+//Exemplo de REST
 
-nomes.splice(1, 1, "Maria");
-//Imprimindo o array
-console.log(nomes);
-console.log("\n");
+let pessoa = {nome: "Maria", idade: 25, endereco: "Rua 1", telefone: "999999999"};
 
-//Alterando o valor de dois elementos do array utilizando o método splice
-nomes.splice(1, 2, "Tuca", "Jorge");
-//Imprimindo o array
-console.log(nomes);
-console.log("\n");
+let {nome, idade, ...resto} = pessoa;
 
-//Alterando o valor de um elemento do array utilizando o método splice
-nomes.splice(1, 1);
-//Imprimindo o array
-console.log(nomes);
-console.log("\n");
+console.log(nome);
+console.log(idade);
+console.log(resto);
 
-console.log("\nAlterando o valor de um elemento do array utilizando o método splice");
-nomes.splice(1, 1, "Maria");
-console.log(nomes);
+//Exemplo de DESTRUCTURING
+const {nome: nome2, idade: idade2, endereco: endereco2, telefone: telefone2} = pessoa;
+
+console.log(nome2);
+console.log(idade2);
+console.log(endereco2);
+
+
+ 

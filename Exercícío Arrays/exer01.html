@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coded by PF0670</title>
-    <script src="./js/tarefas.js" defer></script>
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
-
-        <!-- Para exercitarmos nosso conhecimento vamos trabalhar com uma página de tarefas pessoais.
-- Crie um projeto HTML/CSS/JS
+    
+    <!-- Para exercitarmos nosso conhecimento vamos trabalhar com uma página de tarefas
+pessoais.
+- Crie um projeto HTML/CSS/JS de nome exercicio-01-arrays
 - Crie uma página HTML de nome index e adicione os seguintes elementos:
 - Título da página com identificação do aluno.
 - Formulário com um input e um botão para adicionar novas tarefas.
@@ -28,6 +29,12 @@ SPLICE. -->
                 <input type="text" name="tarefa" id="idTarefa" placeholder="Digite o nome da tarefa." required>
             </div>
             <div>
+                <select name="categoria" id="idCategoria">
+                    <option value="0">Selecione uma categoria</option>
+                </select>
+            </div>
+
+            <div>
                 <button type="submit" id="btnAddTarefa">Adicionar</button>
             </div>
         </fieldset>
@@ -40,7 +47,24 @@ SPLICE. -->
     </ul>
 </div>
 
+<p>Form de Login</p>
+<form action="#" method="get">
+    <fieldset>
+        <legend>Login</legend>
+        <div>
+            <label for="idEmail">Email</label>
+            <input type="text" name="email" id="idEmail" placeholder="Digite seu email" required>
+        </div>
+        <div>
+            <label for="idSenha">Senha</label>
+            <input type="password" name="senha" id="idSenha" placeholder="Digite sua senha" required>
+        </div>
+        <div>
+            <button type="submit" id="btnLogin" onclick="validarUsuario(idEmail.value,idSenha.value)">Login</button>
+        </div>
+    </fieldset>
+
+ 
 
 </body>
 </html>
-    
