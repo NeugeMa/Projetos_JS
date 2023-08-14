@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    
+    <!-- Adição de nova tarefa - O usuário pode adicionar novas tarefas com campos para descrição, autor, departamento e importância-->
+    <form id="taskForm">
+        <label for="description">Descrição:</label>
+        <input type="text" id="description" required>
+        <label for="author">Autor:</label>
+        <input type="text" id="author" required>
+        <label for="department">Departamento:</label>
+        <input type="text" id="department" required>
+        <label for="importance">Importância:</label>
+        <input type="number" id="importance" required>
+        <button type="button" onclick="addTask()">Adicionar Tarefa</button>
+    </form>
+    
+    <!-- Exibição de tarefas-->
+    <table id="taskTable">
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Autor</th>
+                <th>Departamento</th>
+                <th>Importância</th>
+                <th>Valor</th>
+                <th>Duração</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody id="taskList"></tbody>
+    </table>
+    
+
+</body>
+</html>
