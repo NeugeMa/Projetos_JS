@@ -1,8 +1,10 @@
-// Definindo a matriz
+// Código feito para a interação simples, para se gerar uma lista de tarefas
+
+// Definindo a matriz: armazenar tarefas 
 const taskList = [];
 
 // Função para adicionar uma nova tarefa
-function addTask() {
+function addTask() { // Usada para adicionar novas tarefas 
     const description = document.getElementById('description').value;
     const author = document.getElementById('author').value;
     const department = document.getElementById('department').value;
@@ -23,6 +25,7 @@ function addTask() {
 }
 
 // Função para renderizar a lista de tarefas
+
 function renderTaskList() {
     const taskListBody = document.getElementById('taskList');
     taskListBody.innerHTML = '';
@@ -47,7 +50,7 @@ function renderTaskList() {
     });
 }
 
-// Resto do código: funções addValueToTask, addDurationToTask, removeTask, clearForm
+// Funções addValueToTask, addDurationToTask, removeTask, clearForm
 
 function addValueToTask(index) {
     const value = prompt('Informe o valor da tarefa:');
@@ -77,6 +80,7 @@ function clearForm() {
     document.getElementById('importance').value = '';
 }
 
-// Chamar a função para renderizar a lista de tarefas inicialmente
+// Chamar a função para motrar a lista de tarefas inicialmente
+
 renderTaskList();
 
