@@ -5,6 +5,7 @@ const taskList = [];
 
 // Função para adicionar uma nova tarefa
 function addTask() { // Usada para adicionar novas tarefas 
+    console.log("Adicionando nova tarefa... "); 
     const description = document.getElementById('description').value;
     const author = document.getElementById('author').value;
     const department = document.getElementById('department').value;
@@ -19,13 +20,12 @@ function addTask() { // Usada para adicionar novas tarefas
         duration: null
     };
 
-    taskList.push(task);
+    taskList.push(task); //insere dados
     renderTaskList();
-    clearForm();
+    clearForm(); // limpa os campos de formulário
 }
 
 // Função para renderizar a lista de tarefas
-
 function renderTaskList() {
     const taskListBody = document.getElementById('taskList');
     taskListBody.innerHTML = '';
@@ -51,7 +51,6 @@ function renderTaskList() {
 }
 
 // Funções addValueToTask, addDurationToTask, removeTask, clearForm
-
 function addValueToTask(index) {
     const value = prompt('Informe o valor da tarefa:');
     if (value !== null) {
@@ -80,7 +79,6 @@ function clearForm() {
     document.getElementById('importance').value = '';
 }
 
-// Chamar a função para motrar a lista de tarefas inicialmente
-
+// Atualização de lista de tarefas
 renderTaskList();
 
